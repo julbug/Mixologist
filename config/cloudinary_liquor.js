@@ -3,7 +3,7 @@ const { CloudinaryStorage } = require('multer-storage-cloudinary');
 const multer = require('multer');
 
 cloudinaryPKG.config({
-    cloud_name: "nemuidb"
+    cloud_name: process.env.CLOUDNAME
     ,api_key: process.env.CLOUDAPI
     ,api_secret: process.env.CLOUDSECRET
   });

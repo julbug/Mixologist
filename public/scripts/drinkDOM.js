@@ -11,7 +11,7 @@ let glassN = 0
 //------------- Get API Data ----------------
 axios({
   method: 'GET',
-  url: 'http://localhost:3000/api/ingredients',
+  url: '/api/ingredients',
   //params: 'URL parameters to be sent with the request'
 })
   .then(response => {
@@ -24,7 +24,7 @@ axios({
 
   axios({
     method: 'GET',
-    url: 'http://localhost:3000/api/liquors',
+    url: '/api/liquors',
     //params: 'URL parameters to be sent with the request'
   })
     .then(response => {
